@@ -14,23 +14,23 @@ $(error SDK path not found; set ENV value PLAYDATE_SDK_PATH)
 endif
 
 # List C source files here
-SRC = Source/main.c
-SRC += Source/wasm3/m3_api_libc.c
-SRC += Source/wasm3/m3_api_tracer.c
-SRC += Source/wasm3/m3_bind.c
-SRC += Source/wasm3/m3_code.c
-SRC += Source/wasm3/m3_compile.c
-SRC += Source/wasm3/m3_core.c
-SRC += Source/wasm3/m3_env.c
-SRC += Source/wasm3/m3_exec.c
-SRC += Source/wasm3/m3_function.c
-SRC += Source/wasm3/m3_info.c
-SRC += Source/wasm3/m3_module.c
-SRC += Source/wasm3/m3_parse.c
+SRC = src/main.c
+SRC += src/wasm3/m3_api_libc.c
+SRC += src/wasm3/m3_api_tracer.c
+SRC += src/wasm3/m3_bind.c
+SRC += src/wasm3/m3_code.c
+SRC += src/wasm3/m3_compile.c
+SRC += src/wasm3/m3_core.c
+SRC += src/wasm3/m3_env.c
+SRC += src/wasm3/m3_exec.c
+SRC += src/wasm3/m3_function.c
+SRC += src/wasm3/m3_info.c
+SRC += src/wasm3/m3_module.c
+SRC += src/wasm3/m3_parse.c
 
 # List all user directories here
-UINCDIR = Source
-UINCDIR += Source/wasm3
+UINCDIR = src
+UINCDIR += src/wasm3
 
 # List user asm files
 UASRC =

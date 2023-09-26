@@ -4,7 +4,7 @@
 #include "m3_env.h"
 
 // Constants and Macros
-#define WASM_STACK_SIZE 2048
+#define WASM_STACK_SIZE 4096
 #define FATAL(msg, ...) { pd->system->logToConsole("[FATAL] " msg, ##__VA_ARGS__); return 0; }
 
 // Global variables
